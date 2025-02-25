@@ -29,10 +29,9 @@ img {
 
 /* TODO: variables */
 :root {
-    --font-family: "Roboto", "MS Sans Serif", "Calibri", serif;
     --font-size: 16px;
     --line-height: 1.5;
-    --letter-spacing: 2%;
+    --letter-spacing: 0.02em;
     --color-slate-body-text:#434455;
     --color-navy-blue-heading-overlays-shadows:#2E2F42;
     --color-iris-cta:#4D5AE5;
@@ -41,9 +40,8 @@ img {
     --color-white:#ffffff;
 }
 
-
 body {
-    font-family: var(--font-family);
+    font-family: "Roboto", "MS Sans Serif", "Calibri", sans-serif;
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     font-size: var(--font-size);
@@ -51,6 +49,29 @@ body {
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
     color: var(--color-slate-body-text);
+    background-color: #ffffff;
+}
+
+.logo-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#4D5AE5;
+}
+
+.logo-text {
+    color:#2E2F42;
+}
+
+/* Hero-section */
+.hero-section {
+    color: var(--color-white);
+    background-color: var(--color-navy-blue-heading-overlays-shadows);
+    line-height: 1.07;
+    text-align: center;
 }
 
 .hero-title {
@@ -64,13 +85,18 @@ body {
 .hero-btn {
     color: currentColor;
     cursor: pointer;
-    font-family: inherit;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: var(--font-size);
     line-height: var(--line-height);
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
     color: var(--color-white);
     background-color:var(--color-iris-cta);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--color-ocean-cta-pressed-state);
 }
 
 .section-title {
@@ -87,34 +113,30 @@ body {
     color: var(--color-navy-blue-heading-overlays-shadows);
 }
 
+
 /* Header -> Navigation */
 .nav-link {
-    color: var(--color-navy-blue-heading-overlays-shadows);
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
+
 .nav-link:hover,
 .nav-link:focus {
+    color:#404bbf;
     text-decoration: underline;
 }
+
 /* Header -> Address */
-.address {
+address {
+    font-style: normal;
     color: var(--color-slate-body-text);
 }
 
-.address .address-link:hover,
-.address .address-link:focus {
-    color: var(--color-iris-cta);
+.address-link:hover,
+.address-link:focus {
+    color: #404bbf;
 }
 
-/* Hero-section */
-.hero-section {
-    color: var(--color-white);
-    background-color: var(--color-navy-blue-heading-overlays-shadows);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-    color: var(--color-ocean-cta-pressed-state);
-}
 
 /* Links */
 .link:active {
@@ -133,6 +155,16 @@ body {
 
 /* Footer: */
 .footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--color-cloud);
     background-color: var(--color-navy-blue-heading-overlays-shadows);
+}
+
+.footer-text {
+    letter-spacing: 0.02em;
 }
