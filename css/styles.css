@@ -1,28 +1,17 @@
-/* TOFO: variables */
-/* :root {
-    --font-family: Roboto;
-    --font-weight: 400;
-    --font-size: 16px;
-    --line-height: 24px;
-    --letter-spacing: 2%;
-} */
-
-body {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-}
-
 /* Reset: */
-ul, ol {
+ul,
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -32,55 +21,118 @@ a {
     color: currentColor;
 }
 
-button {
-    color: currentColor;
-    cursor: pointer;
-    font-family: inherit;
-}
-
-
 img {
-    display:block;
+    display: block;
     max-width: 100%;
     height: auto;
 }
 
-/* Styles: */
-.main-title {
-    font-family: Roboto;
-    font-weight: bold;
+/* TODO: variables */
+:root {
+    --font-family: "Roboto", "MS Sans Serif", "Calibri", serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+    --letter-spacing: 2%;
+    --color-slate-body-text:#434455;
+    --color-navy-blue-heading-overlays-shadows:#2E2F42;
+    --color-iris-cta:#4D5AE5;
+    --color-ocean-cta-pressed-state:#404BBF;
+    --color-cloud:#F4F4FD;
+    --color-white:#ffffff;
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-size: var(--font-size);
+    font-style: normal;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-slate-body-text);
+}
+
+.hero-title {
+    font-weight: 700;
     font-size: 56px;
+    /* line-height 60!!  */
     line-height: 60px;
-    letter-spacing: 2%;
+    letter-spacing: var(--letter-spacing);
+}
+
+.hero-btn {
+    color: currentColor;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: 4%;
+    color: var(--color-white);
+    background-color:var(--color-iris-cta);
 }
 
 .section-title {
-    font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
-    letter-spacing: 2%;
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-navy-blue-heading-overlays-shadows);
 }
 
 .li-title {
-    font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
-    letter-spacing: 2%;
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-navy-blue-heading-overlays-shadows);
 }
 
-.button {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 4%;
-    color:#ffffff;
-    background-color:#4D5AE5;
+/* Header -> Navigation */
+.nav-link {
+    color: var(--color-navy-blue-heading-overlays-shadows);
+}
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration: underline;
+}
+/* Header -> Address */
+.address {
+    color: var(--color-slate-body-text);
 }
 
-.button:hover,
-.button:focus {
-    color:#404BBF;
+.address .address-link:hover,
+.address .address-link:focus {
+    color: var(--color-iris-cta);
 }
 
+/* Hero-section */
+.hero-section {
+    color: var(--color-white);
+    background-color: var(--color-navy-blue-heading-overlays-shadows);
+}
 
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--color-ocean-cta-pressed-state);
+}
+
+/* Links */
+.link:active {
+    color: var(--color-iris-cta)
+}
+
+.link:hover,
+.link:focus {
+    color: var(--color-iris-cta)
+}
+
+/* Section TEAM background color */
+.team {
+    background-color: var(--color-cloud);
+}
+
+/* Footer: */
+.footer {
+    color: var(--color-cloud);
+    background-color: var(--color-navy-blue-heading-overlays-shadows);
+}
