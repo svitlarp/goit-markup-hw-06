@@ -1,0 +1,86 @@
+/* TOFO: variables */
+/* :root {
+    --font-family: Roboto;
+    --font-weight: 400;
+    --font-size: 16px;
+    --line-height: 24px;
+    --letter-spacing: 2%;
+} */
+
+body {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+
+/* Reset: */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Links and call elements don't inherits -> so we do reset  */
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    color: currentColor;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles: */
+.main-title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 2%;
+}
+
+.section-title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 2%;
+}
+
+.li-title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2%;
+}
+
+.button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+    color:#ffffff;
+    background-color:#4D5AE5;
+}
+
+.button:hover,
+.button:focus {
+    color:#404BBF;
+}
+
+
