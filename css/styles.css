@@ -94,12 +94,8 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-    color: var(--color-ocean-cta-pressed-state);
+    background-color: var(--color-ocean-cta-pressed-state);
 }
-
-
-
-
 
 
 /* Header -> Navigation */
@@ -141,7 +137,7 @@ address {
 }
 
 
-/* ________________________________ */
+/* Sections */
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -164,7 +160,9 @@ address {
 .team {
     background-color: var(--color-cloud);
 }
-
+.section-team-img {
+    background-color: var(--color-white);
+}
 
 /* Footer: */
 .footer {
@@ -185,4 +183,5 @@ address {
 
 .footer-text {
     letter-spacing: 0.02em;
+    line-height: var(--line-height);
 }
