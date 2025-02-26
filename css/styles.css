@@ -97,19 +97,9 @@ body {
     color: var(--color-ocean-cta-pressed-state);
 }
 
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: var(--letter-spacing);
-    color: var(--color-navy-blue-heading-overlays-shadows);
-}
 
-.li-title {
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: var(--letter-spacing);
-    color: var(--color-navy-blue-heading-overlays-shadows);
-}
+
+
 
 
 /* Header -> Navigation */
@@ -150,27 +140,31 @@ address {
     line-height: 1.2;
 }
 
+
+/* ________________________________ */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+    text-transform: capitalize;
+    color: var(--color-navy-blue-heading-overlays-shadows);
+}
+
+.section-li-title {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: var(--letter-spacing);
+    line-height: 1.2;
+    color: var(--color-navy-blue-heading-overlays-shadows);
+}
+
 /* Section TEAM */
 .team {
     background-color: var(--color-cloud);
 }
 
-.team.section-title {
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.team.li-title {
-    line-height: 1.2;
-}
-
-/* Section Portfolio  */
-.portfolio.section-title {
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-}
 
 /* Footer: */
 .footer {
