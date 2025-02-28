@@ -164,6 +164,10 @@ address {
     background-color: var(--color-white);
 }
 
+.team-player {
+    background-color: var(--color-white);
+}
+
 /* Footer: */
 .footer {
     font-family: "Raleway", sans-serif;
