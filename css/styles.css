@@ -89,6 +89,7 @@ img {
 
 /* Logo */
 .logo-link {
+    margin-right: 76px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -100,7 +101,6 @@ img {
 
 .logo-text {
     color:#2E2F42;
-    margin-right: 76px;
 }
 
 /* Menu */
