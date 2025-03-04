@@ -65,8 +65,10 @@ img {
 /* Common */
 
 .container {
-    padding: 0 156px;
-    max-width: 1128px;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* max-width: 1128px; */
     /* margin: 0 32px; */
 }
 
@@ -82,7 +84,7 @@ img {
 }
 .nav-addr {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 /* Logo */
