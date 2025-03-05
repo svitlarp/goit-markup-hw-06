@@ -169,6 +169,11 @@ address {
     padding: 188px 0;
     color: var(--color-white);
     background-color: var(--color-navy-blue-heading-overlays-shadows);
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url("../images/hero/hero-bkgr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title {
