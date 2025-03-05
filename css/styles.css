@@ -6,6 +6,7 @@
     --color-navy-blue-heading-overlays-shadows:#2E2F42;
     --color-iris-cta:#4D5AE5;
     --color-ocean-cta-pressed-state:#404BBF;
+    --color-succes: #31D0AA;
     --color-cloud:#F4F4FD;
     --color-white:#ffffff;
 }
@@ -114,12 +115,24 @@ img {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link:active::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    background-color: var(--color-ocean-cta-pressed-state);
 }
 
 .menu-link:hover,
 .menu-link:focus {
     color: #404bbf;
-    text-decoration: underline;
+}
+
+.menu-link:active {
+    color: #404bbf;
 }
 
 /* Address */
@@ -130,6 +143,10 @@ address {
 .address-list {
     display: flex;
     gap: 40px
+}
+
+.address-link {
+    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -220,6 +237,13 @@ address {
     width: calc((100% - 3*24px) / 4);
 }
 
+.benefits-icon {
+    border: 1px solid #8E8F99;
+    border-radius: 8px;
+    background-color: var(--color-cloud); 
+    fill: ;
+}
+
 /* .benefits.section-title {
     line-height: 1.2;
 } */
@@ -276,6 +300,11 @@ address {
     border-radius: 0 0 4px 4px;
 }
 
+.team-player:hover .socials-aitem,
+.team-player:focus .socials-item {
+    background-color: #404BBF;
+}
+
 .team-content {
     padding: 32px 0;
 }
@@ -287,6 +316,7 @@ address {
 
 .team-content .section-text {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 
@@ -357,6 +387,11 @@ address {
     line-height: var(--line-height);
 }
 
+.footer .socials-item:hover {
+    background-color: var(--color-succes);
+}
+
+
 /* Links */
 .link:active {
     color: var(--color-iris-cta)
@@ -366,4 +401,32 @@ address {
 .link:focus {
     color: var(--color-iris-cta)
 }
+
+/* Icons Social */
+.socials {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-item {
+    border-radius: 50%;
+    padding: 12px;
+    background-color: var(--color-iris-cta);
+}
+
+.social-link {
+    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    fill: var(--color-cloud);
+}
+
 
