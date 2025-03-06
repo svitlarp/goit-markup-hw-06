@@ -431,8 +431,8 @@ address {
 
 /* Footer: */
 .footer {
-    display: flex;
-    align-items: baseline;
+    /* display: flex;
+    align-items: baseline; */
     padding: 100px 0;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -443,8 +443,20 @@ address {
     background-color: var(--color-navy-blue-heading-overlays-shadows);
 }
 
-.footer-logo-link {
+.footer-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+footer-logo-slogan {
     display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 120px;
+}
+
+.footer-logo-link {
+    /* display: inline-block; */
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -481,15 +493,6 @@ address {
     margin-bottom: 16px;
 }
 
-/* Links */
-.link:active {
-    color: var(--color-iris-cta)
-}
-
-.link:hover,
-.link:focus {
-    color: var(--color-iris-cta)
-}
 
 /* Icons Social */
 .socials {
@@ -528,3 +531,12 @@ address {
 }
 
 
+/* Links */
+.link:active {
+    color: var(--color-iris-cta)
+}
+
+.link:hover,
+.link:focus {
+    color: var(--color-iris-cta)
+}
