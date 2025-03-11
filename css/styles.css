@@ -668,16 +668,11 @@ address {
 .modal-close-btn:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 }
 
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* При ховері на кнопку в модалці змінюється стиль іконки на fill: #ffffff */
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-    fill: #ffffff;
 }
 
 .modal-header {
@@ -703,7 +698,6 @@ address {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
-    /* line-height: 14px; */
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--color-light-slate);
@@ -716,32 +710,49 @@ address {
 }
 
 .modal-form-input {
-    /* TODO Typography for text input */
     display: block;
     width: 100%;
     min-height: 40px;
     padding: 11px 38px;
     border-radius: 4px;
     border: 1px solid #2E2F4266;
-    /* outline: transparent; */
-    /* transition: ??; */
-    /* transition-property: border-color; */
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
-    /* border: 2px solid var(--color-ocean-cta-pressed-state); */
-    border-color: red;
+    border-color: #4D5AE5;
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    stroke: var(--color-navy-blue-heading-overlays-shadows);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus+.modal-form-icon {
+    stroke: var(--color-iris-cta);
+    fill: #4D5AE5;
 }
 
 .modal-form-comment {
+    padding: 8px 16px;;
     width: 100%;
     height: 120px;
     border-radius: 4px;
-    /* border: 1px solid var(--color-navy-blue-heading-overlays-shadows); */
     border: 1px solid #2E2F4266;
     resize: none;
-
-    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-comment:focus {
@@ -750,28 +761,6 @@ address {
 
 .modal-form-comment:focus-visible {
     border: var(--color-iris-cta);
-}
-
-/* input[type]  */
-modal-form-icon-wrapper {
-}
-
-.modal-form-icon {
-    display: inline-flex;
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    stroke: var(--color-navy-blue-heading-overlays-shadows);
-    /* stroke: currentColor; */
-    /* transition: ??; */
-    /* transition-property: stroke; */
-
-}
-
-.modal-form-input:focus + .modal-form-icon {
-    stroke: var(--color-iris-cta);
 }
 
 /* Aggreement */
