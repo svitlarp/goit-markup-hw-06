@@ -540,6 +540,7 @@ address {
  
 /* Footer Block 3 Subscribe */
 .footer-subscribe-text {
+    margin-bottom: 16px;
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
@@ -588,7 +589,7 @@ address {
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
@@ -739,6 +740,9 @@ address {
     fill: #4D5AE5;
 }
 
+.modal-form-field-textarea {
+    margin-bottom: 16px;
+}
 .modal-form-comment {
     padding: 8px 16px;;
     width: 100%;
@@ -764,7 +768,7 @@ address {
 }
 
 /* Aggreement */
-.modal-form-aggreement {
+/* .modal-form-aggreement {
     display: block;
     margin-bottom: 24px;
     font-family: Roboto;
@@ -772,9 +776,9 @@ address {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 4%;
-}
+} */
 
-.modal-form-aggreement-link {
+/* .modal-form-aggreement-link {
     font-family: Roboto;
     font-weight: 400;
     font-size: 12px;
@@ -782,15 +786,24 @@ address {
     letter-spacing: 4%;
     text-decoration: underline;
     text-decoration-style: solid;
-    /* text-decoration-offset: 0%; */
     text-decoration-thickness: 0%;
 }
 .modal-form-aggreement:checked {
     border:rgba(255, 0, 0, 4);
-}
-
+} */
 
 .modal-form-checkbox {
+    margin-bottom: 24px;
+}
+
+.modal-form-checkbox-label { 
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-light-slate);
+}
+
+.modal-form-checkbox-icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -801,9 +814,11 @@ address {
     border-radius: 2px;
     cursor: pointer;
     user-select: none;
-    transition: background-color 500ms ease-in-out;
-    /* transition-property: ; */
-
+    fill: transparent;
+    /* transition: background-color 500ms ease-in-out; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type="checkbox"]:checked + .modal-form-checkbox {
@@ -815,39 +830,49 @@ input[type="checkbox"]:checked + .modal-form-checkbox {
     border: 1px solid var(--color-ocean-cta-pressed-state);
 } */
 
-.modal-form-aggreement-link {
-    
+.modal-form-policy-link {
+    color: var(--color-iris-cta);
 }
+
 
 /* Modal Button */
 .modal-btn {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto 24px auto;
     background-color: var(--color-iris-cta);
     box-shadow: 0px 4px 4px 0px #00000026;
     width: 169;
     height: 56;
-    /* top: 584px;
-    left: 635px; */
     border-radius: 4px;
     border: none;
     padding: 16px 32px;
     gap: 10px;
+
+    /* typography */
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-text {
+/* .modal-btn-text {
     color: #FFFFFF;
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     /* Line-height !!! */
-    line-height: 24px;
+    /* line-height: 24px; */
     /* Line-height to em!!! */
-    letter-spacing: 4%;
+    /* letter-spacing: 4%;
     text-align: center;
-    vertical-align: middle;
-}
+    vertical-align: middle; */
+/* }  */
 
 /* .modal-overlay.is-open {
     opacity: 1;
