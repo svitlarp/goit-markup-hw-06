@@ -29,12 +29,12 @@
             >Web <span class="logo-text">Studio</span></a
           >
           <!-- Menu buttom for Mobile -->
-          <button type="button" class="menu-btn">
+          <button type="button" class="menu-btn" aria-label="Open menu button">
             <svg class="menu-btn-icon" width="16" height="14">
               <use href="./images/burger.svg#icon-burger"></use>
             </svg>
           </button>
-
+          <div class="mobile-menu-overlay">Mobile Menu Overlay</div>
           <ul class="menu-list">
             <li>
               <a class="menu-link underlined-link" href="./index.html"
@@ -706,6 +706,18 @@
           <!-- Modal Button -->
           <button type="submit" class="modal-btn">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!-- Region Mobile Menu  -->
+    <div class="backdrop">
+      <div class="mobile-menu">
+        <h4>Mobile Menu</h4>
+        <button class="mobile-btn" type="button">
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </body>
